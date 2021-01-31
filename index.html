@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Temperature Calculator</title>
+</head>
+
+<body>
+
+    <div class="intro py-3 bg-white text-center">
+        <div class="container">
+            <h2 class="text-primary display-3 my-4">Temperature Converter</h2>
+        </div>
+    </div>
+
+    <div class="convertor py-4 bg-primary">
+        <div class="container">
+            <form class="form text-light text-center">
+                <div class="my-4 text-center">
+                    <p class="lead font-weight-normal">Conversion Mode</p>
+                    <div class="form-check my-3 text-white-50">
+                        <input type="radio" name="q" value="A">
+                        <label class="form-check-label">From Celsius To Fahrenheit</label>
+                    </div>
+                    <div class="form-check my-3 text-white-50">
+                        <input type="radio" name="q" value="B">
+                        <label class="form-check-label">From Fahrenheit To Celsius</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="px-3" for="input-value">Value</label><br>
+                        <input class="input-value w-25 text-center" type="text" class="form-control" id="value" placeholder="Enter a value...">
+                    </div>
+                    <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+                </div>
+            </form>
+            <p class="result-text d-none font-weight text-center text-white display-6">Result</p>
+            <div class="result text-center text-white py-1 display-3"><span class="sign"></span></div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
